@@ -8,6 +8,15 @@ h1 {
   color: #FF6E95;
   font-weight: 300;
 }
+
+a {
+  text-decoration: none;
+  color: #ff6699;
+}
+a:visited {
+  text-decoration: none;
+  color: #ff6699;
+}
 @media  (max-width: 414px) {
 
   h1 {
