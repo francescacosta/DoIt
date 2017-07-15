@@ -5,6 +5,7 @@ var toDo = document.getElementsByClassName('toDo')[0];
 var toggleInput = function () {
   if (inputBox.style.display === "" || inputBox.style.display === "none") {
     inputBox.style.display = "unset";
+    inputBox.focus();
   } else {
     inputBox.style.display = "none";
   }
