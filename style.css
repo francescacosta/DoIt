@@ -25,6 +25,15 @@ a:visited {
 
 }
 
+.input-box {
+  width: 150px;
+  height: 20px;
+  position: fixed;
+  bottom: 95px;
+  left: 70px;
+  border-radius: 9px;
+  display: none;
+}
 .add {
   cursor: pointer;
   position: fixed;
