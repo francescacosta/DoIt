@@ -25,6 +25,13 @@ a:visited {
 
 }
 
+.add {
+  cursor: pointer;
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+}
+
 .footer-text {
   display: block;
   text-align: center;
