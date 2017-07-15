@@ -40,7 +40,8 @@ a:visited {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 12px;
   letter-spacing: 0.08em;
-  padding-bottom: 50px;
+  position: fixed;
+  bottom: 20px;
 }
 
 .line {
