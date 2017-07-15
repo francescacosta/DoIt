@@ -3,3 +3,11 @@ h1 {
   color: #FF6E95;
   font-weight: 300;
 }
+@media  (max-width: 414px) {
+
+  h1 {
+    font-size: 72px;
+  }
+
+
+}
