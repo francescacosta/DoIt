@@ -28,6 +28,12 @@ a:visited {
   letter-spacing: 0.08em;
   padding-bottom: 50px;
 }
+
+.line {
+  border: 5px solid #FFCADF;
+  width: 100%;
+}
+
 @media  (max-width: 414px) {
 
   h1 {
