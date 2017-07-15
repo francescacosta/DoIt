@@ -23,7 +23,7 @@ var addItem = function(e) {
   var randomId = Math.floor(Math.random() * 10000);
 
   if (e.keyCode === 13) {
-    toDo.insertAdjacentHTML('afterbegin', `<li id="${randomId}"> <input type="checkbox"> <span onclick="deleteToDo('${randomId}')">${inputBox.value}</span> </li>`);
+    toDo.insertAdjacentHTML('afterbegin', `<li id="${randomId}"> <input class="checkbox" type="checkbox"> <span onclick="deleteToDo('${randomId}')">${inputBox.value}</span> </li>`);
     inputBox.value = '';
   }
 }
