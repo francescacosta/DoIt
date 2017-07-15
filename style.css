@@ -34,6 +34,23 @@ a:visited {
   border-radius: 9px;
   display: none;
 }
+
+.toDo {
+  list-style: none;
+}
+
+.toDo li {
+  margin-top: 15px;
+  font-family: "Century Gothic";
+  font-size: 17px;
+  color: #4A4A4A;
+  font-weight: lighter;
+}
+
+.toDo li:hover {
+  text-decoration: line-through;
+}
+
 .add {
   cursor: pointer;
   position: fixed;
