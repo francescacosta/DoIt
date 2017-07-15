@@ -17,6 +17,17 @@ a:visited {
   text-decoration: none;
   color: #ff6699;
 }
+
+.footer-text {
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: #FF6E95;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  padding-bottom: 50px;
+}
 @media  (max-width: 414px) {
 
   h1 {
