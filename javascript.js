@@ -1,13 +1,16 @@
 var add = document.getElementsByClassName('add')[0];
 var inputBox = document.getElementsByClassName('input-box')[0];
 var toDo = document.getElementsByClassName('toDo')[0];
+var overlay = document.getElementsByClassName('overlay')[0];
 //Functions
 var toggleInput = function () {
   if (inputBox.style.display === "" || inputBox.style.display === "none") {
     inputBox.style.display = "unset";
+    overlay.style.display = "unset";
     inputBox.focus();
   } else {
     inputBox.style.display = "none";
+    overlay.style.display = "none";
   }
 }
 
