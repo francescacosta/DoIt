@@ -21,10 +21,6 @@ var deleteToDo = function(inputId) {
   document.getElementById(inputId).outerHTML = '';
 }
 
-add.onclick = function() {
-  toggleInput();
-}
-
 var addItem = function(e) {
   var randomId = Math.floor(Math.random() * 10000);
 
