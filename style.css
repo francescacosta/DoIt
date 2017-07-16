@@ -31,6 +31,38 @@ a:visited {
   color: #ff6699;
 }
 
+.buttons {
+  float: right;
+  margin-top: -25px;
+}
+
+.current {
+  cursor: pointer;
+
+  margin-right: 10px;
+  color: #FF6E95;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.current:hover {
+  color: #FFCADF;
+}
+
+.completed {
+  cursor: pointer;
+  margin-right: 10px;
+  color: #FF6E95;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.completed:hover {
+  color: #FFCADF;
+}
+
 .todo-container {
   margin-top: 35px;
 }
