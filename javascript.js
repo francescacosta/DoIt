@@ -2,6 +2,9 @@ var add = document.getElementsByClassName('add')[0];
 var inputBox = document.getElementsByClassName('input-box')[0];
 var toDo = document.getElementsByClassName('toDo')[0];
 var overlay = document.getElementsByClassName('overlay')[0];
+var completed = document.getElementsByClassName('completed')[0];
+var current = document.getElementsByClassName('current')[0];
+
 //Functions
 var toggleInput = function () {
   if (inputBox.style.display === "" || inputBox.style.display === "none") {
@@ -34,4 +37,17 @@ var addItem = function(e) {
     toDo.insertAdjacentHTML('afterbegin', `<li id="${randomId}"> <input class="checkbox" type="checkbox"> <span onclick="deleteToDo('${randomId}')">${inputBox.value}</span> </li>`);
     inputBox.value = '';
   }
+}
+
+//Events
+completed.onclick = function() {
+  toDo.style.display = "none";
+}
+
+current.onclick = function() {
+  toDo.style.display = "block";
+}
+
+add.onclick = function() {
+  toggleInput();
 }
