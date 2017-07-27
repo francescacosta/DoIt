@@ -1,6 +1,7 @@
 var add = document.getElementsByClassName('add')[0];
 var inputBox = document.getElementsByClassName('input-box')[0];
 var toDo = document.getElementsByClassName('toDo')[0];
+var completedToDo = document.getElementsByClassName('completed-to-do')[0];
 var overlay = document.getElementsByClassName('overlay')[0];
 var completed = document.getElementsByClassName('completed')[0];
 var current = document.getElementsByClassName('current')[0];
@@ -19,6 +20,7 @@ var toggleInput = function () {
 
 var deleteToDo = function(inputId) {
   document.getElementById(inputId).outerHTML = '';
+
 }
 
 var addItem = function(e) {
@@ -30,18 +32,27 @@ var addItem = function(e) {
   }
 
   if (e.keyCode === 13) {
-    toDo.insertAdjacentHTML('afterbegin', `<li id="${randomId}"> <input class="checkbox" type="checkbox"> <span onclick="deleteToDo('${randomId}')">${inputBox.value}</span> </li>`);
+    toDo.insertAdjacentHTML('afterbegin', `<li id="${randomId}"> <input class="checkbox" type="checkbox" onclick='checkedBox(this);'> <span onclick="deleteToDo('${randomId}')">${inputBox.value}</span> </li>`);
     inputBox.value = '';
   }
+}
+
+function checkedBox(cb) {
+  var li = cb.parentElement;
+  cb.outerHTML = '';
+  completedToDo.append(li);
+  completedToDo.style.display = "none";
 }
 
 //Events
 completed.onclick = function() {
   toDo.style.display = "none";
+  completedToDo.style.display = "block";
 }
 
 current.onclick = function() {
   toDo.style.display = "block";
+  completedToDo.style.display = "none";
 }
 
 add.onclick = function() {
